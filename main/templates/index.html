@@ -1,0 +1,603 @@
+{% extends 'base.html' %} 
+
+    <!-- Title -->
+    {% block title %} Federico Baú | Portfolio {% endblock %}
+
+    {% block header %} 
+        
+    <!-- ======================  < HEADER > ====================== -->
+        <div class="header-text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main"><a href="{{url_for('index')}}">Python Developer</a></span>
+                <span class="heading-primary-sub">Federico Baú | Portfolio</span>
+            </h1>
+    
+            <a href="#projects" class="btn btn-main btn-animated smooth-goto";>Projects</a>
+        
+            
+            <a href="#knowledge" class="btn  btn-animated  smooth-goto" ;>Knowledges</a>
+            <a href="#about" class="btn  btn-animated smooth-goto" ;>About</a>
+            <a href="#contact" class="btn  btn-animated smooth-goto" ;>Contact</a>
+
+        </div>
+    {% endblock %}  
+
+
+    <!-- ======================  < MAIN > ====================== -->
+    {% block main %} 
+        <main>
+            <!-- knowledge -->
+            <section class="section-white section-first">
+                <div class="flex-main">
+                    <div class="content flex-child flex-content">
+                        <h2 class="heading-secondary">
+                            Knowledges
+                        </h2>
+                            
+                    </div>
+                </div>
+            </section>    
+
+            <section class="section-blue" id="knowledge">
+
+                <!-- ======================  < LOGOS > ====================== -->
+                <div class="flex-main flex-min">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+                    
+                    <!-- BOX 1 -->
+                    <article class="content flex-child flex-content flex-content-min">
+                        <img class="picture-size-one pic-motion" src="/static/img/icon/javascript-original.svg" alt="Opps">
+                    </article>                    
+                    <!-- */ -->
+
+                    <!-- BOX 2-->                   
+                    <article class="content flex-child flex-content flex-content-min"> 
+                        <img class="picture-size-one pic-motion" src="/static/img/icon/css3-original.svg" alt="Opps">
+                    </article>
+                    <!-- */ -->
+                    
+                    <!-- BOX 3-->
+                    <article class="content flex-child flex-content flex-content-min"> 
+                        <img class="picture-size-one pic-motion" src="/static/img/icon/html5-original.svg" alt="Opps">
+                    </article>
+                    <!-- */ -->
+
+                    <!-- BOX 4 -->
+                    <article class="content flex-child flex-content flex-content-min"> 
+                        <img class="picture-size-one pic-motion" src="/static/img/icon/c-original.svg" alt="Opps">
+                    </article>
+                    <!-- */ -->
+
+                    <!-- BOX 5 -->                   
+                    <article class="content flex-child  flex-content flex-content-min">
+                        <img class="picture-size-one pic-motion" src="/static/img/icon/python-original.svg" alt="Opps">
+                    </article>
+                    <!-- */ -->
+
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right">        
+                    </aside>
+                </div>
+
+                <div class="flex-main">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content">
+                        <a href="#popup1">
+                            <div class="feature-box">
+                                <i class="feature-box_icon icon-basic-gear"></i>
+                                <h3 class="heading-tertiary margin-bottom-small">Programming</h3>
+                            </div>
+                        </a>
+
+                    </article>
+                    <!-- */ -->
+
+                    <!-- BOX 2-->
+                    <article class="content flex-child flex-content">
+                        <a href="#popup2">
+                            <div class="feature-box">
+                                <i class="feature-box_icon icon-basic-world"></i>
+                                <h3 class="heading-tertiary margin-bottom-small">Software as a service</h3>
+                            </div>
+                        </a>
+                
+                    </article>
+                    <!-- */ -->
+                    
+                    <!-- BOX 3-->
+                    <article class="content flex-child flex-content"> 
+                        <a href="#popup3">
+                            <div class="feature-box">
+                                <i class="feature-box_icon icon-basic-server2"></i>
+                                <h3 class="heading-tertiary margin-bottom-small">Databases</h3>
+                            </div>
+                        </a>
+            
+                    </article>
+                    <!-- */ -->
+
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right">        
+                    </aside>
+                </div>
+            </section>           
+
+            <!-- ======================  < Projects > ====================== -->
+            <section class="section-white" >
+                <div class="flex-main">
+                    <div class="content flex-child flex-content">
+                        <h2 class="heading-secondary">
+                            Projects
+                        </h2>                
+                    </div>
+                </div>
+            </section>   
+
+            <section class="section-blue" id="projects">
+                <!-- ROW 1 -->
+                <section class="main-content flex-main" >
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+
+                    <!-- Project One -->
+                    <article class="content flex-child flex-content">                        
+                            <div class="feature-box"> 
+                                <h3 class="heading-tertiary margin-bottom-small">Python JSON Converter</h3> 
+                                <a class="btn flex-btn" href="http://koubae.pythonanywhere.com/" target="_blank">See the App</a>
+                                <a class="btn flex-btn" href="https://github.com/Koubae/json-converter" target="_blank">Source Code</a>
+                                
+                            </div>
+                    </article>
+                    <!-- */ -->
+
+                    <!-- Project Two -->
+                    <article class="content flex-child flex-content"> 
+                        <div class="feature-box">                             
+                            <h3 class="heading-tertiary margin-bottom-small">Images Scraper</h3>
+                            <a class="btn flex-btn" href="#proj-scrap" >See Demo</a>
+                            <a class="btn flex-btn" href="{{ url_for('scrap_proj.scrap_index')}}">Source Code</a> 
+                        </div>
+                    </article>
+                    <!-- */ -->
+
+                    <!-- Project Three -->
+                    <article class="content flex-child flex-content">
+                        <div class="feature-box">                   
+                            <h3 class="heading-tertiary margin-bottom-small">Algorithm Guide</h3>
+                            <div class="margin-bottom-small"></div>
+                            <a class="btn flex-btn" href="https://github.com/Koubae/Algorithm-Complete-Guide" target="_blank">See Guide</a>  
+                            <a class="btn flex-btn" href="#proj-algo" >Info</a>                       
+                        </div>
+                    </article>
+                    <!-- */ -->
+                
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right">        
+                    </aside>
+                </section>
+            </section>
+
+            <!-- ======================  < About > ====================== -->
+            <div class="container-sm"></div>
+            <div class="flex-main" id="about">
+                <div class="content flex-child flex-content">
+                    <h2 class="heading-secondary" >
+                        About 
+                    </h2>
+                        
+                </div>
+            </div>
+            
+            <section class="flex-main" >
+                <!-- Page Side Left -->
+                <aside class="content flex-child flex-side left">                         
+                </aside>
+                <aside class="content flex-child flex-side left">                         
+                </aside>
+
+                <!-- BOX -->
+                <article class="content flex-child flex-content"  >
+                    <div class="feature-box">
+                        <i class="feature-box_icon icon-basic-todo-pencil"></i>
+                        <h3 class="heading-tertiary margin-bottom-small">Self-Taught Programmer</h3>
+                        <div class="popup-text p">
+                            <p>
+                                I'm a Self-Taught Python developer with 2 years experience in the field. My methodology of learning put me at ease when facing new Technologies, Frameworks and libraries.  
+                            </p>
+                            <p>
+                                I’m currently focusing on Software Engineering and Back-end Development.
+                            </p>
+                            
+                        </div>
+                        <div class="margin-bottom-medium"></div>
+                        <hr class="popup-hr">
+
+                        <div class="margin-bottom-small"></div>
+                        <h3 class="heading-tertiary margin-bottom-small">Hard Worker</h3>
+                        <div class="popup-text p">
+                            <p>
+                                Do what you are paid for and do it well. I do take responsibility for the tasks and challenges that are being assigned to me, during good and bad days, no matter what.
+                            </p>
+
+                            <p>
+                                Getting things done is the key that leads to progress, as well as consistency. 
+                            </p>
+
+                            <p>
+                                One of my strong points is being able to see my own weakness, laying down clearly the path where I need to grow, bringing me overtime further.
+                            </p>
+                        </div>
+                        <div class="margin-bottom-medium"></div>
+                        <hr class="popup-hr">
+
+                        <div class="margin-bottom-small"></div>
+                        <h3 class="heading-tertiary margin-bottom-small">Team Worker </h3>
+                        <div class="popup-text p">
+                            <p>
+                                I strongly believe that team-working is the key that leads to success and loyalty towards my co-workers.   
+                            </p>
+                        </div>
+                        <div class="margin-bottom-medium"></div>
+                        <div class="margin-bottom-medium"></div>
+                    </div>
+                    
+
+                </article>
+                <!-- */ -->
+                <!-- Page Side Right -->
+                <aside class="content flex-child flex-side right">        
+                </aside>
+                <!-- Page Side Right -->
+                <aside class="content flex-child flex-side right">        
+                </aside>
+            </section>
+            
+            <div class="container"></div>
+
+            <section class="section-blue background-blue"></section>
+                
+            <!-- ======================  < Contact > ====================== -->
+            <section class="section-white">
+                <div class="flex-main">
+                    <div class="content flex-child flex-content">
+                        <h2 class="heading-secondary">
+                            Contact
+                        </h2>
+                    </div>
+                    
+                </div>
+            </section>   
+
+            <section class="section-blue" >
+                
+                <!-- Main Contact -->
+                <section class="main-content flex-main" id="contact">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+
+                    <div class="left-right-separator"></div>
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content">
+                        <div class="feature-box ">
+                            <i class="feature-box_icon icon-basic-info"></i>
+                            <h3 class="heading-tertiary margin-bottom-small">Contact Info</h3>
+                            <div class="margin-bottom-medium"></div>
+
+                            <div class="heading-secondary-sm">Phone: </div>
+                            <h2 class="heading-tertiary">+34 632 727721</h2>
+                            <div class="margin-bottom-medium"></div>
+                            <hr class="popup-hr">
+
+                            <div class="margin-bottom-medium"></div>
+                            <div class="heading-secondary-sm">Email Address:</div>
+                            <h2 class="heading-tertiary email-add"><a class="link-show" href="mailto:fredbau91@gmail.com">fredbau91@gmail.com</a></p></h2>
+                            <div class="margin-bottom-medium"></div>
+                            <hr class="popup-hr">
+
+                            <div class="margin-bottom-medium"></div>
+                            <div class="heading-secondary-sm">City: </div>
+                            <h2 class="heading-tertiary">Barcelona, Spain</h2>
+                            <div class="margin-bottom-medium"></div>
+                        </div>
+                    </article>
+                    <!-- */ -->
+
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right">        
+                    </aside>
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right">        
+                    </aside>
+                </section>
+
+
+                <!-- Social Media -->
+                <section class="main-content flex-main">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+
+                    <div class="left-right-separator"></div>
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content ">
+                        <a href="https://es.linkedin.com/in/federico-baù-7a65338a/" target="_blank">
+                            <div class="feature-box feature-round">                            
+                                <img class="feature-box_icon_other" src="static/img/linkedin.png"  alt="Opps...">                        
+                                <h3 class="heading-tertiary margin-bottom-small">linkedin</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <!-- */ -->
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content ">
+                        <a href="https://github.com/Koubae" target="_blank">
+                            <div class="feature-box feature-round">                            
+                                <img class="feature-box_icon_other" src="static/img/GitHub-Mark-64px.png"  alt="Opps...">                        
+                                <h3 class="heading-tertiary margin-bottom-small">GitHub</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <!-- */ -->
+
+                    <!-- BOX 3-->
+                    <article class="content flex-child flex-content flex-round"> 
+                        <a href="https://stackoverflow.com/users/13903942/federico-baù" target="_blank">
+                            <div class="feature-box feature-round">
+                                <img src="static/img/stack-overflow-64.png" alt="Opps...">
+                                <h3 class="heading-tertiary margin-bottom-small">Stack Overflow</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <!-- */ -->
+
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right">        
+                    </aside>
+                </section>
+            </section>
+
+
+        </main>  
+
+    {% endblock %}
+
+    <!-- ======================  < POPUPS > ====================== -->
+    {% block popups %} 
+
+        <!-- PopUp 1  -->
+        <div class="popup" id="popup1">  
+            <div class="popup-content">
+            <div class="flex-main">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content">
+                        <h3 class="heading-secondary">Software Development</h3>
+                
+                        <div class="margin-bottom-small"></div>
+                        <h3 class="heading-tertiary margin-bottom-small">Programming Languages</h3>
+                        <div class="popup-text p">
+                            <p>Python</p>                        
+                            <p>JavaScript (Familiar)</p>                        
+                            <p>C (Familiar)</p>                        
+                        </div>
+                        <div class="popup-text margin-bottom-small">
+                        </div>
+                        <hr class="popup-hr">
+
+                        <h3 class="heading-tertiary margin-bottom-small">Frameworks</h3>
+                        <div class="popup-text p margin-bottom-small">
+                            <p>Flask</p>
+                            <p>Beautiful Soup</p>
+                        </div>
+                        <hr class="popup-hr">
+
+                        <h3 class="heading-tertiary margin-bottom-small">Web Protocols</h3>
+                        <div class="popup-text p margin-bottom-small">
+                            
+                            <p>RESTful APIs</p>
+                            <p>DNS | HTTP | TCP/IP |IMAP |POP | SMTP</p>
+
+                        </div>
+                        <hr class="popup-hr">
+                        <a href="#knowledge" class="popup-close">&times;</a>
+                    </article>
+
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right"> 
+                    </aside>   
+                </div>                             
+            </div>
+        </div>
+
+        <!-- PopUp 2  -->
+        <div class="popup" id="popup2">
+            <div class="popup-content">
+                <div class="flex-main">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content">
+                        <h3 class="heading-secondary">Software as a service</h3>
+                        <div class="margin-bottom-medium"></div>
+                        <h3 class="heading-tertiary margin-bottom-small">Google Workspace</h3>
+                        <div class="popup-text p margin-bottom-medium">
+                            <hr class="popup-hr">
+
+                            <p>Migration & Sync Tools</p>
+                            <p>Real time communication: Gmail | Google chat | Google Meet</p>                            
+                            <p>Collab:  Drive |Docs | Sheet | Classroom | Sites</p>
+                            <p>Google Workspace Admin Console</p>
+                            <p>Migration & Sync Tools</p>
+                            
+                        </div>
+                        <a href="#knowledge" class="popup-close">&times;</a>
+                    </article>
+                    
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right"> 
+                    </aside>     
+                </div>                           
+            </div>
+        </div>
+
+
+
+        <!-- PopUp 3  -->
+        <div class="popup" id="popup3">
+            <div class="popup-content">
+                <div class="flex-main">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content">
+                        <h3 class="heading-secondary">Databases</h3>
+                        <div class="margin-bottom-medium"></div>
+                        <h3 class="heading-tertiary margin-bottom-small">Embedded</h3>
+                        <div class="popup-text p margin-bottom-small">
+                            <p>SQLite3</p>
+                        </div>
+                        <hr class="popup-hr">
+                        <hr class="popup-hr">
+                        
+
+                        <div class="margin-bottom-small"></div>
+                        <h3 class="heading-tertiary margin-bottom-small">Object Relational Mapper</h3>
+                        <div class="popup-text p margin-bottom-small">
+                            <p>SQLAlchemy</p>
+                        </div>
+                        <a href="#knowledge" class="popup-close">&times;</a>       
+
+                    </article>
+
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right"> 
+                    </aside>  
+                </div>                              
+            </div>
+        </div>
+
+
+
+
+
+        <!-- =============== ------------ PROJECTS -->
+        <!-- Project scrap image -->
+        <div class="popup" id="proj-scrap">  
+            <div class="popup-content">        
+
+                <div class="flex-main">
+                    
+                        <!-- BOX 1-->
+                        <article class="content flex-child flex-content">
+
+                                <h2 class="heading-secondary-sm no-capitalize">How it works</h2>
+            
+                                <div class="feature-box-list">                                    
+                                    <p class="feature-box-text">Choose number of images.</p>
+                                    <p class="feature-box-text">Write some keywords, it downloads number of images per each keyword (max 3 keywords).</p>
+                                    <p class="feature-box-text">Press the download buttom to download the images</p>          
+                                <!-- </div> -->
+                                
+                            <a href="#knowledge" class="popup-close">&times;</a>       
+
+                        </article>
+
+                        <article class="content flex-child flex-content">
+                            <form action="{{ url_for('scrap_proj.scrap_download')}}" method="POST" id="formScraper">
+
+                                <div class="form_group">
+                                    <div class="box">
+                                        <h4 class="heading-secondary-sm no-capitalize">How many Images?</h4>
+                                        <div class="margin-bottom-small"></div>
+                                        <label for="total" class="radio">
+                                        <select id="total" name="total" form="formScraper">
+                                            <option value="1">1 Picture</option>
+                                            <option value="2">2 Picture</option>
+                                            <option value="5">5 Picture</option>
+                                            <option value="10">10 Picture</option>
+                                            <option value="10">20 Picture</option>
+                                        </select>
+                                        </label>
+                                    </div> 
+
+                                    <div class="input_container">
+                                        <input type="text" class="scrap_input" name="keywords" id="keywords" placeholder="Enter Keywords" required>
+                                        <span class="awsome_input_border"/>
+                                    </div>
+                                    <button type="submit" class="btn flex-btn download"  formtarget="formScraper">Download</button>
+                                </div>                           
+                            </form>
+                        </article>
+                                        
+                </div>                             
+            </div>
+        </div>
+
+        <!-- Project Algo -->
+        <div class="popup" id="proj-algo">  
+            <div class="popup-content">
+                <div class="flex-main">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side ">                         
+                    </aside>
+                    <article class="content flex-child flex-content">
+                        <h3 class="heading-tertiary margin-bottom-small">Algorithm Complete Guide</h3>
+
+                    </article>
+                    <aside class="content flex-child flex-side ">                         
+                    </aside>
+                </div>
+
+                <div class="flex-main">
+                    <!-- Page Side Left -->
+                    <aside class="content flex-child flex-side left">                         
+                    </aside>            
+
+                    <!-- BOX 1-->
+                    <article class="content flex-child flex-content">
+                        <div class="popup-text p">
+                            <p >This is a new Long-Term project with the purpose to have a complete overview of Algorithms across different computing & programming techniques and different solutions theories.
+                            </p>
+                            <div class="margin-bottom-small"></div>
+                            <hr class="popup-hr">
+                            <div class="margin-bottom-small"></div>
+                            <p>The project aims to implement computer algorithms in different programming languages. At the moment Python is the main language used in the different scripts, but it will grow overtime. Algorithms written in C will soon be added.</p>
+                            <div class="margin-bottom-small"></div>
+                            <hr class="popup-hr">
+                            <div class="margin-bottom-small"></div>
+                            <p>The first algorithms I added are Graph Algorithms, Path Search Algorithms and Data Structure Algorithms (for instance a simple Linked-List), as the project grows in complexity, so the 'Esotericism' of the Algorithms will.</p>                    
+                        </div>
+                        
+                        <a href="#knowledge" class="popup-close">&times;</a>
+                    </article>
+
+                    <!-- Page Side Right -->
+                    <aside class="content flex-child flex-side right"> 
+                    </aside> 
+                    
+                </div>                             
+            </div>
+        </div>
+        
+    {% endblock %}

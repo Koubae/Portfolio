@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Info -->
+        <meta name="description" content="My Python Developer Portfolio">
+        <meta name="keywords" content="Resume, Flask app, Portfolio, developer, Python, software">
+        <meta name="author" content="Federico Baú, fredbau91@gmail.com" />
+        <meta name="copyright" content="Copyright owner" />
+    
+        <!-- Favicons Icons -->
+        <link rel="shortcut icon" type="image/x-icon" href="/static/img/favi/favicon-32x32.png" sizes="32x32" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/img/favi/apple-icon-57x57.png" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/main.css">
+        <link rel="stylesheet" href="static/icon-font.css">
+
+        {% block head %} {% endblock %}
+        
+        <title>{% block title %} {% endblock %}</title>
+    </head>
+    <body>
+        {% from "macro/macro.html" import flash %}
+
+        <!-- Header /* -->
+        <header class="header">
+            <!-- logo -->
+            <div class="header-logo-box">            
+                <span class="header-brand">
+                    <a href="{{url_for('index')}}">
+                        <img src="/static/img/py.png" alt="Opps..." class="header-logo  icon-basic-webpage">
+                    </a>
+                </span>     
+            </div>
+            <!-- {{flash()}}  -->
+            {% block header %} 
+            {% endblock %}
+        </header>
+        <!-- */ -->
+        
+        
+        <!-- Main /*-->
+        {% block main %} 
+        
+        {% endblock %}
+        <!-- */ -->
+        <section class="section-blue background-blue-footer"></section>
+        
+        <!-- Footer -->
+        <footer class="footer-">
+            
+            <!-- Flex Box -->
+            <section class="flex-main">            
+                <!-- Page Side Left -->
+                <aside class="content flex-child flex-side left">         
+                </aside>
+                <div class="signature">
+                </div>
+
+                <!-- Signature -->
+                <article class="content flex-child flex-content">
+                    <!-- logo -->                    
+                    <a href="{{url_for('index')}}">
+                        <img src="/static/img/py.png" alt="Opps..." class="header-logo  icon-basic-webpage">
+                    </a>   
+                    <div class="margin-bottom-medium"></div>
+                    <div class="signature">
+                        
+                        <hr class="popup-hr">
+                        <div class="margin-bottom-small"></div>
+
+                        <!-- Address -->
+                        <address> 
+                            <a href="https://github.com/Koubae" target="_blank"><img class="feature-box_icon_other" src="static/img/GitHub-Mark-64px.png"  alt="Opps..."></a>
+
+                            <div class="margin-bottom-medium"> 
+                                <p class="heading-tertiary email-add" >Author: Federico Baú </p> 
+                                <p class="heading-tertiary email-add">Email:<a class="link-show" href="mailto:fredbau91@gmail.com">fredbau91@gmail.com</a></p>
+                            </div>
+                        </address>      
+                        <p class="heading-tertiary">&copy; Copyright 2021</p> 
+                    </div>
+                    <!-- logo -->                    
+                    <a href="{{url_for('index')}}">
+                        <img src="/static/img/py.png" alt="Opps..." class="header-logo  icon-basic-webpage">
+                    </a>                    
+
+                </article>
+                <!-- */ -->
+
+                <!-- Page Side Right -->
+                <aside class="content flex-child flex-side right">                    
+                </aside>
+            </section>
+            <!-- */ -->
+        </footer>
+
+
+        <!-- ======================  < POPUPS > ====================== -->
+        {% block popups %} 
+        
+        {% endblock %}
+
+    </body>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        {% block scripts_before %} 
+            
+        {% endblock %}
+            <script src="static/main.js"></script> 
+        {% block scripts_after %} {% endblock %}   
+</html>

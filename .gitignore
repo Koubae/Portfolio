@@ -1,0 +1,13 @@
+__pycache__
+.idea
+.vscode
+env
+env/*
+.env
+env/
+Lib
+lib/
+Lib/
+site-packages
+include
+
